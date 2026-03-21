@@ -1,4 +1,4 @@
-## P01 · The Digital Twin Shell
+# P01 · The Digital Twin Shell
 
 **Section:** 01 — The Digital Twin Foundation
 
@@ -26,6 +26,8 @@ Action: Create an image of a generic "Digital Twin" for a professional football 
 Context: This image will serve as a proposal for clubs in La Liga and the Premier League. We are in the middle of a congested season (3 games in 10 days). This "Digital Twin" must be a high-fidelity representation of a professional football player.
 ```
 
+---
+
 ## 🏢 Intended Workflow or Task
 
 This prompt is the Visual Foundation of the consultancy proposal.
@@ -41,6 +43,8 @@ This prompt is the Visual Foundation of the consultancy proposal.
 Kick-off → [P01 runs] → Visual Shell Created → P02/P03/P04 Data Overlays
 ```
 
+---
+
 ## ❗ Problem Being Solved
 
 Performance departments struggle to communicate complex data to non-technical stakeholders (Coaches/Board Members).
@@ -53,6 +57,8 @@ Pain points addressed:
 
 - Difficulty in visualizing the "Body" behind the biometric numbers during congested fixtures
 
+---
+
 ## ⚡ Automation Potential
 
 **Level: Medium**
@@ -62,4 +68,68 @@ Pain points addressed:
 | **Repetitiveness** | `High` &nbsp; • &nbsp; Used as the base for every player profile |
 | **Human judgment needed** | `Low` &nbsp; • &nbsp; Visual approval only |
 | **Integration possibility** | `Medium` &nbsp; • &nbsp; Could be used as a dynamic UI element |
+
+**Human-in-the-loop role:** Consultant reviews image for anatomical accuracy and brand alignment before presenting to the club.
+
+---
+
+## ⚠️ Risks and Limitations
+
+| Risk | Level | Mitigation |
+| :--- | :--- | :--- |
+| **Hallucination of Data Artifacts** | `Medium` | System flags output if text is detected; re-run with higher negative prompt weighting. |
+| **Generic Anatomical Output** | `Low` | Human-in-the-loop review by Lead Sports Scientist to ensure alignment with athlete's actual build. |
+| **Confidential Data Exposure** | `Low` | Prompt explicitly excludes names/logos; integration passes only anonymized Player IDs. |
+| **Tone/Style Mismatch** | `Low` |  Scoped for Performance Dept; use `P09` template for Executive-level visuals. |
+| **Placeholder Malformation** | `Medium` |  Validate all player metrics in the Sports Management System before the prompt runs. |
+
+**Overall Risk Rating: LOW** — The prompt is suitable for near-full automation within a professional football club's workflow, requiring only lightweight human review for visual accuracy.
+
+---
+
+## 🔄 Version History
+
+### v1.0 — Initial Draft
+
+**Date:** March 10 2026
+
+**Prompt:** `Create a digital version of a football (soccer) player.`
+
+**Output:** <img width="1408" height="768" alt="Gemini_Generated_Image_6xvg0y6xvg0y6xvg" src="https://github.com/user-attachments/assets/27259c17-88b3-4362-b9de-a5d6e49f8424" />
+
+**Result:** Unusable action shot; too much background noise; looks like a video game.
+
+**Observed effect:** Generated an artistic illustration rather than a functional tool; the dynamic pose makes it impossible to use for data overlays.
+
+**Lesson learned:** Generic prompts without a defined Role or Task default to "Entertainment" mode; high-performance tools require specific structural constraints.
+
+### v1.1 — Added RACE framework
+
+**Date:** March 11 2026
+
+**Prompt:** Added "Lead Sports Scientist" role and 5 data pillars, we ended up deciding that data pillars will be added later on.
+
+**Output:** <img width="1408" height="768" alt="Gemini_Generated_Image_6turqh6turqh6tur" src="https://github.com/user-attachments/assets/e073facf-8399-44f4-b803-aa149b6baf89" />
+
+**Result:** High visual quality, but "baked-in" hallucinated data (e.g., fake VO2 max) made it non-functional for real-time use. Not what we wanted right now.
+
+**Observed effect:** The AI "hallucinated" fake data points and baked them into the image, rendering the asset non-functional for real-time data integration.
+
+**Lesson learned:** Defining too many features in a single prompt causes "Dashboard Overload"; the visual shell must be separated from the data layer to remain modular.
+
+### v1.2 - Added constraints and exclusions ✅ Current
+
+**Date:** March 12 2026
+
+**Change:** Added negative constraints ("Don't create a Dashboard") and fixed body orientation.
+
+**Output:** <img width="1408" height="768" alt="Gemini_Generated_Image_ft1tf4ft1tf4ft1t" src="https://github.com/user-attachments/assets/d39acaeb-06a8-4bf2-a5aa-dadc8390e0a1" />
+
+**Result:** A clean, professional muscular map ready for modular data integration.
+
+**Observed effect:** Produced a consistent, high-fidelity shell that is "data-ready" for the subsequent overlay prompts in the library.
+
+**Lesson learned:** Explicit exclusion clauses (negative prompting) and specific orientation instructions are essential to prevent AI hallucination in professional technical assets.
+
+---
 
