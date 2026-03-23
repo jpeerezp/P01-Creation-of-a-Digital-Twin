@@ -65,9 +65,9 @@ Pain points addressed:
 
 | Dimension | Assessment |
 | :--- | :--- |
-| **Repetitiveness** | `High` &nbsp; • &nbsp; Used as the base for every player profile |
-| **Human judgment needed** | `Low` &nbsp; • &nbsp; Visual approval only |
-| **Integration possibility** | `Medium` &nbsp; • &nbsp; Could be used as a dynamic UI element |
+| Repetitiveness | `High` &nbsp; - &nbsp; Used as the base for every player profile |
+| Human judgment needed | `Low` &nbsp; - &nbsp; Visual approval only |
+| Integration possibility | `Medium` &nbsp; - &nbsp; Could be used as a dynamic UI element |
 
 **Human-in-the-loop role:** Consultant reviews image for anatomical accuracy and brand alignment before presenting to the club.
 
@@ -77,11 +77,12 @@ Pain points addressed:
 
 | Risk | Level | Mitigation |
 | :--- | :--- | :--- |
-| **Hallucination of Data Artifacts** | `Medium` | System flags output if text is detected; re-run with higher negative prompt weighting. |
-| **Generic Anatomical Output** | `Low` | Human-in-the-loop review by Lead Sports Scientist to ensure alignment with athlete's actual build. |
-| **Confidential Data Exposure** | `Low` | Prompt explicitly excludes names/logos; integration passes only anonymized Player IDs. |
-| **Tone/Style Mismatch** | `Low` |  Scoped for Performance Dept; use `P09` template for Executive-level visuals. |
-| **Placeholder Malformation** | `Medium` |  Validate all player metrics in the Sports Management System before the prompt runs. |
+| Hallucination of Data Artifacts | `Medium` | System flags output if text is detected; re-run with higher negative prompt weighting. |
+| Generic Anatomical Output | `Low` | Human-in-the-loop review by Lead Sports Scientist to ensure alignment with athlete's actual build. |
+| Confidential Data Exposure | `Low` | Prompt explicitly excludes names/logos; integration passes only anonymized Player IDs. |
+| Tone/Style Mismatch | `Low` |  Scoped for Performance Dept; use `P09` template for Executive-level visuals. |
+| Placeholder Malformation | `Medium` |  Validate all player metrics in the Sports Management System before the prompt runs. |
+
 
 **Overall Risk Rating: LOW** — The prompt is suitable for near-full automation within a professional football club's workflow, requiring only lightweight human review for visual accuracy.
 
@@ -150,6 +151,6 @@ Pain points addressed:
 
 - **Next in chain:** P02 — The Physical Pillar (Injects biometric and GPS data onto the shell)
 
-- **Also uses:** P03 — Technical & Tactical Pillars (Correlates performance drops with physical fatigue)
+- **Also uses:** P03 — Technical & Tactical Pillars (Injects technical and tactical data onto the shell)
 
-- **Also uses:** P04 — Cognitive & Emotional Pillars (Finalizes the "Mental Twin" by layering wellness and stress data).
+- **Also uses:** P04 — Cognitive & Emotional Pillars (Injetcts cognitive and emotional data onto the shell and finalises the "Digital Twin".
