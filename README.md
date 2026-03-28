@@ -15,7 +15,7 @@
 ## 📌 Prompt Text (v1.2 — current)
 
 ```
-You are a Lead AI Architect and High-Performance Sports Consultant. Your expertise lies in creating "Digital Twins" for elite athletes to solve match congestion risks.
+Role: You are a Lead AI Architect and High-Performance Sports Consultant. Your expertise lies in creating "Digital Twins" for elite athletes to solve match congestion risks.
 
 Action: Create an image of a generic "Digital Twin" for a professional football player. Strictly follow the next requirements:
 - Body must be straight (facing the camera). 
