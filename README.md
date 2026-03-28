@@ -18,12 +18,15 @@
 Role: You are a Lead AI Architect and High-Performance Sports Consultant. Your expertise lies in creating "Digital Twins" for elite athletes to solve match congestion risks.
 
 Action: Create an image of a generic "Digital Twin" for a professional football player. Strictly follow the next requirements:
-- Body must be straight (facing the camera). 
+- Body must be straight (facing the camera). 
 - Create only the image of the body, don't add any boxes with invented data.
 - Use a professional blue color highlighting every muscle in the body.
-- Don't create a Dashboard, Only the body of the Digital Twin.
 
 Context: This image will serve as a proposal for clubs in La Liga and the Premier League. We are in the middle of a congested season (3 games in 10 days). This "Digital Twin" must be a high-fidelity representation of a professional football player.
+
+Constraints:
+- Don't create a Dashboard, Only the body of the Digital Twin.
+- No background, emphasising more in the digital twin architecture.
 ```
 
 ---
@@ -122,9 +125,9 @@ Pain points addressed:
 
 **Date:** March 12 2026
 
-**Change:** Added negative constraints ("Don't create a Dashboard") and fixed body orientation.
+**Change:** Added negative constraints ("Don't create a Dashboard, Remove background") and fixed body orientation.
 
-**Output:** <img width="1408" height="768" alt="Gemini_Generated_Image_ft1tf4ft1tf4ft1t" src="https://github.com/user-attachments/assets/d39acaeb-06a8-4bf2-a5aa-dadc8390e0a1" />
+**Output:** <img width="468" height="255" alt="Digital Twin Architecture" src="https://github.com/user-attachments/assets/335d2e73-b88e-41c6-bb4c-c04dda76d820" />
 
 **Result:** A clean, professional muscular map ready for modular data integration.
 
